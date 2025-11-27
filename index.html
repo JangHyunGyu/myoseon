@@ -11,10 +11,10 @@
     <meta property="og:title" content="Myoseon">
     <meta property="og:description" content="따뜻한 햇살이 머무는 곳, 당신의 이야기를 담았습니다.">
     <meta property="og:image" content="https://myoseon.kr/assets/images/Myoseonstories.png">
-	<meta property="og:image:alt" content="Myoseon 로고" />
-	<meta property="og:image:width" content="1200" />
-	<meta property="og:image:height" content="630" />
-	<meta property="og:image:type" content="image/png" />
+    <meta property="og:image:alt" content="Myoseon 로고" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/png" />
     <title>Myoseon</title>
     <link rel="icon" type="image/png" href="assets/images/favicon.png">
 
@@ -190,13 +190,27 @@
         }
 
         @keyframes slideUp {
-            from { opacity: 0; transform: translateY(30px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         @keyframes float {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
         }
     </style>
 </head>
@@ -210,8 +224,8 @@
 
         <nav class="nav-links">
             <a href="https://book.myoseon.kr" class="nav-item">Library</a>
-            <button type="button" class="nav-item" onclick="showNotice('art')">Art</button>
-            <button type="button" class="nav-item" onclick="showNotice('photo')">Photo</button>
+            <a href="https://art.myoseon.kr" class="nav-item">Art</a>
+            <a href="https://photo.myoseon.kr" class="nav-item">Photo</a>
         </nav>
     </div>
 
