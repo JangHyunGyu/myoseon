@@ -6,4 +6,7 @@
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url><loc>https://myoseon.kr/seo/healing-essay.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://myoseon.kr/seo/gamseong-geulgwi.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://myoseon.kr/seo/mind-comfort.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>
