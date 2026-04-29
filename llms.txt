@@ -1,0 +1,27 @@
+# Myoseon
+> Korean emotional creative hub with essays, stories, photography, and art galleries.
+
+## About
+Myoseon is a personal creative site centered on warm writing, emotional essays, photo essays, and visual galleries. It connects the Myoseon story archive, art gallery, and photo exhibition.
+
+## Sections
+- Stories and essays: https://book.myoseon.kr/
+- Art gallery: https://art.myoseon.kr/
+- Photo exhibition: https://photo.myoseon.kr/
+
+## Features
+- Emotional essays and short writing
+- Korean creative writing archive
+- Art and photo gallery links
+- Calm, minimal browsing experience
+- Personal creative brand by Myoseon
+
+## Links
+- Home: https://myoseon.kr/
+- Sitemap: https://myoseon.kr/sitemap.xml
+
+## Language
+- Korean (한국어)
+
+## Category
+Personal Creative Site, Essays, Photo Essay, Art Gallery, Korean Writing
