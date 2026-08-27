@@ -17,8 +17,13 @@ Myoseon is a personal creative site centered on warm writing, emotional essays, 
 - Personal creative brand by Myoseon
 
 ## Links
-- Home: https://myoseon.kr/
-- Sitemap: https://myoseon.kr/sitemap.xml
+- [Home](https://myoseon.kr/)
+- [Healing essay guide](https://myoseon.kr/seo/healing-essay.html)
+- [Emotional quote guide](https://myoseon.kr/seo/gamseong-geulgwi.html)
+- [Comforting writing guide](https://myoseon.kr/seo/mind-comfort.html)
+- [Quiet online space guide](https://myoseon.kr/seo/quiet-online-space.html)
+- [Essay, photo, and art space guide](https://myoseon.kr/seo/essay-photo-art-space.html)
+- [Sitemap](https://myoseon.kr/sitemap.xml)
 
 ## Language
 - Korean (한국어)

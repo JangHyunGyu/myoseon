@@ -30,15 +30,32 @@ const esc = s => s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;
 
 function render(p) {
   const url = `${SITE}/seo/${p.slug}.html`;
-  const faqLd = {"@context":"https://schema.org","@type":"FAQPage","mainEntity":C.faqs.map(([q,a])=>({"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":a}}))};
+  const pageId = `${url}#webpage`;
+  const faqLd = {"@context":"https://schema.org","@graph":[
+    {"@type":"WebSite","@id":`${SITE}/#website`,"url":`${SITE}/`,"name":"Myoseon","inLanguage":"ko"},
+    {"@type":"WebPage","@id":pageId,url,"name":p.title,"description":p.meta,"inLanguage":"ko","isPartOf":{"@id":`${SITE}/#website`},"breadcrumb":{"@id":`${url}#breadcrumb`}},
+    {"@type":"BreadcrumbList","@id":`${url}#breadcrumb`,"itemListElement":[{"@type":"ListItem","position":1,"name":"Myoseon","item":`${SITE}/`},{"@type":"ListItem","position":2,"name":p.h1,"item":url}]},
+    {"@type":"FAQPage","@id":`${url}#faq`,"mainEntity":C.faqs.map(([q,a])=>({"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":a}}))}
+  ]};
   return `<!DOCTYPE html>
 <html lang="ko"><head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0TNF61Y3D0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-0TNF61Y3D0');
+</script>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>${esc(p.title)}</title><meta name="description" content="${esc(p.meta)}">
 <link rel="canonical" href="${url}">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
 <meta property="og:title" content="${esc(p.title)}"><meta property="og:description" content="${esc(p.meta)}"><meta property="og:url" content="${url}"><meta property="og:type" content="website">
 <style>${CSS}</style>
 <script type="application/ld+json">${JSON.stringify(faqLd)}</script>
+<script src="../assets/js/ga-engagement.js?v=20260618-engagement" defer></script>
 </head><body><div class="wrap">
 <h1>${esc(p.h1)}</h1>
 <p class="intro">${esc(p.intro)}</p>
