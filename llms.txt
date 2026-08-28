@@ -23,6 +23,7 @@ Myoseon is a personal creative site centered on warm writing, emotional essays, 
 - [Comforting writing guide](https://myoseon.kr/seo/mind-comfort.html)
 - [Quiet online space guide](https://myoseon.kr/seo/quiet-online-space.html)
 - [Essay, photo, and art space guide](https://myoseon.kr/seo/essay-photo-art-space.html)
+- [Creative archive guide](https://myoseon.kr/seo/creative-archive-guide.html)
 - [Sitemap](https://myoseon.kr/sitemap.xml)
 
 ## Language
