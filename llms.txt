@@ -24,6 +24,8 @@ Myoseon is a personal creative site centered on warm writing, emotional essays, 
 - [Quiet online space guide](https://myoseon.kr/seo/quiet-online-space.html)
 - [Essay, photo, and art space guide](https://myoseon.kr/seo/essay-photo-art-space.html)
 - [Creative archive guide](https://myoseon.kr/seo/creative-archive-guide.html)
+- [Short stories and essays online (Korean)](https://myoseon.kr/seo/muryo-danpyeon-soseol-essay-ilgi.html)
+- [Myoseon in English: Korean stories, essays, photo and art](https://myoseon.kr/seo/myoseon-korean-stories-essays-art-photo.html)
 - [Sitemap](https://myoseon.kr/sitemap.xml)
 
 ## Language
