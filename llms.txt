@@ -18,14 +18,14 @@ Myoseon is a personal creative site centered on warm writing, emotional essays, 
 
 ## Links
 - [Home](https://myoseon.kr/)
-- [Healing essay guide](https://myoseon.kr/seo/healing-essay.html)
-- [Emotional quote guide](https://myoseon.kr/seo/gamseong-geulgwi.html)
-- [Comforting writing guide](https://myoseon.kr/seo/mind-comfort.html)
-- [Quiet online space guide](https://myoseon.kr/seo/quiet-online-space.html)
-- [Essay, photo, and art space guide](https://myoseon.kr/seo/essay-photo-art-space.html)
-- [Creative archive guide](https://myoseon.kr/seo/creative-archive-guide.html)
-- [Short stories and essays online (Korean)](https://myoseon.kr/seo/muryo-danpyeon-soseol-essay-ilgi.html)
-- [Myoseon in English: Korean stories, essays, photo and art](https://myoseon.kr/seo/myoseon-korean-stories-essays-art-photo.html)
+- [Healing essay guide](https://myoseon.kr/seo/healing-essay)
+- [Emotional quote guide](https://myoseon.kr/seo/gamseong-geulgwi)
+- [Comforting writing guide](https://myoseon.kr/seo/mind-comfort)
+- [Quiet online space guide](https://myoseon.kr/seo/quiet-online-space)
+- [Essay, photo, and art space guide](https://myoseon.kr/seo/essay-photo-art-space)
+- [Creative archive guide](https://myoseon.kr/seo/creative-archive-guide)
+- [Short stories and essays online (Korean)](https://myoseon.kr/seo/muryo-danpyeon-soseol-essay-ilgi)
+- [Myoseon in English: Korean stories, essays, photo and art](https://myoseon.kr/seo/myoseon-korean-stories-essays-art-photo)
 - [Sitemap](https://myoseon.kr/sitemap.xml)
 
 ## Language

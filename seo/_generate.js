@@ -29,11 +29,11 @@ const CSS = `*{box-sizing:border-box;margin:0;padding:0}body{font-family:-apple-
 const esc = s => s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 
 function render(p) {
-  const url = `${SITE}/seo/${p.slug}.html`;
+  const url = `${SITE}/seo/${p.slug}`;
   const pageId = `${url}#webpage`;
   const faqLd = {"@context":"https://schema.org","@graph":[
     {"@type":"WebSite","@id":`${SITE}/#website`,"url":`${SITE}/`,"name":"Myoseon","inLanguage":"ko"},
-    {"@type":"WebPage","@id":pageId,url,"name":p.title,"description":p.meta,"inLanguage":"ko","isPartOf":{"@id":`${SITE}/#website`},"breadcrumb":{"@id":`${url}#breadcrumb`}},
+    {"@type":"WebPage","@id":pageId,url,"name":p.title,"description":p.meta,"inLanguage":"ko","isPartOf":{"@id":`${SITE}/#website`},"breadcrumb":{"@id":`${url}#breadcrumb`},"primaryImageOfPage":{"@type":"ImageObject","url":"https://myoseon.kr/assets/images/social/myoseon-representative.png","width":1254,"height":1254}},
     {"@type":"BreadcrumbList","@id":`${url}#breadcrumb`,"itemListElement":[{"@type":"ListItem","position":1,"name":"Myoseon","item":`${SITE}/`},{"@type":"ListItem","position":2,"name":p.h1,"item":url}]},
     {"@type":"FAQPage","@id":`${url}#faq`,"mainEntity":C.faqs.map(([q,a])=>({"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":a}}))}
   ]};
@@ -56,6 +56,16 @@ function render(p) {
 <style>${CSS}</style>
 <script type="application/ld+json">${JSON.stringify(faqLd)}</script>
 <script src="../assets/js/ga-engagement.js?v=20260618-engagement" defer></script>
+    <meta property="og:image" content="https://myoseon.kr/assets/images/social/myoseon-representative.png">
+    <meta property="og:image:secure_url" content="https://myoseon.kr/assets/images/social/myoseon-representative.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1254">
+    <meta property="og:image:height" content="1254">
+    <meta property="og:image:alt" content="Books, a camera and a watercolor in the Myoseon creative space">
+    <meta name="twitter:image" content="https://myoseon.kr/assets/images/social/myoseon-representative.png">
+    <meta name="twitter:image:alt" content="Books, a camera and a watercolor in the Myoseon creative space">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="robots" content="index, follow, max-image-preview:large">
 </head><body><div class="wrap">
 <h1>${esc(p.h1)}</h1>
 <p class="intro">${esc(p.intro)}</p>
@@ -74,6 +84,6 @@ ${C.faqs.map(([q,a])=>`<details class="faq"><summary>${esc(q)}</summary><p>${esc
 let n=0;
 for (const p of PAGES) { fs.writeFileSync(path.join(__dirname, `${p.slug}.html`), render(p), 'utf8'); n++; }
 console.log(`✓ ${n} pages generated`);
-const frag = PAGES.map(p=>`  <url><loc>${SITE}/seo/${p.slug}.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>`).join('\n');
+const frag = PAGES.map(p=>`  <url><loc>${SITE}/seo/${p.slug}</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>`).join('\n');
 fs.writeFileSync(path.join(__dirname, '_sitemap_fragment.xml'), frag, 'utf8');
 console.log('✓ sitemap fragment written');

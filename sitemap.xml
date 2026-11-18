@@ -6,24 +6,24 @@
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-  <url><loc>https://myoseon.kr/seo/healing-essay.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://myoseon.kr/seo/gamseong-geulgwi.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://myoseon.kr/seo/mind-comfort.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://myoseon.kr/seo/healing-essay</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://myoseon.kr/seo/gamseong-geulgwi</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://myoseon.kr/seo/mind-comfort</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 <!-- traffic-pages:start -->
   <url>
-    <loc>https://myoseon.kr/seo/quiet-online-space.html</loc>
+    <loc>https://myoseon.kr/seo/quiet-online-space</loc>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://myoseon.kr/seo/essay-photo-art-space.html</loc>
+    <loc>https://myoseon.kr/seo/essay-photo-art-space</loc>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://myoseon.kr/seo/creative-archive-guide.html</loc>
+    <loc>https://myoseon.kr/seo/creative-archive-guide</loc>
     <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -31,13 +31,13 @@
 <!-- traffic-pages:end -->
 <!-- about-pages:start -->
   <url>
-    <loc>https://myoseon.kr/seo/muryo-danpyeon-soseol-essay-ilgi.html</loc>
+    <loc>https://myoseon.kr/seo/muryo-danpyeon-soseol-essay-ilgi</loc>
     <lastmod>2026-10-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://myoseon.kr/seo/myoseon-korean-stories-essays-art-photo.html</loc>
+    <loc>https://myoseon.kr/seo/myoseon-korean-stories-essays-art-photo</loc>
     <lastmod>2026-10-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

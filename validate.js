@@ -244,6 +244,30 @@ if (fileExists('index.html')) {
     }
 }
 
+// ─── 8. Sitemap & SEO canonical parity ───
+console.log('\n[8] Sitemap & SEO canonical parity');
+
+if (fileExists('sitemap.xml')) {
+    const sitemapText = fs.readFileSync(path.join(ROOT, 'sitemap.xml'), 'utf-8');
+    const locs = [...sitemapText.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m => m[1].trim());
+    check(locs.length === 9, `sitemap.xml has 9 <loc> entries (found ${locs.length})`, `sitemap.xml expected 9 <loc> entries, found ${locs.length}`);
+    check(locs.every(u => !/\.html$/i.test(u)), 'sitemap.xml contains zero .html URLs', 'sitemap.xml still contains .html URL(s)');
+    for (const loc of locs) {
+        const pathname = new URL(loc).pathname;
+        const htmlRel = pathname === '/' ? 'index.html' : `${pathname.replace(/^\//, '')}.html`;
+        if (!fileExists(htmlRel)) {
+            fail(`sitemap target file missing: ${htmlRel} (${loc})`);
+            continue;
+        }
+        const pageHtml = fs.readFileSync(path.join(ROOT, htmlRel), 'utf-8');
+        const canonical = (pageHtml.match(/<link\b[^>]*rel=["']canonical["'][^>]*href=["']([^"']+)["']/i) || [])[1];
+        const ogUrl = (pageHtml.match(/<meta\b[^>]*property=["']og:url["'][^>]*content=["']([^"']+)["']/i) || [])[1];
+        check(canonical === loc, `${htmlRel}: canonical matches sitemap`, `${htmlRel}: canonical "${canonical}" !== "${loc}"`);
+        check(ogUrl === loc, `${htmlRel}: og:url matches sitemap`, `${htmlRel}: og:url "${ogUrl}" !== "${loc}"`);
+        check(!/href=["']\/?seo\/[^"']+\.html/i.test(pageHtml), `${htmlRel}: zero internal .html SEO links`, `${htmlRel}: still contains internal .html SEO link`);
+    }
+}
+
 // ─── Summary ───
 console.log('\n' + '='.repeat(50));
 console.log(`PASSED: ${passes}  |  FAILED: ${errors}`);
